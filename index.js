@@ -23,6 +23,7 @@ const userDetailsSchema = new mongoose.Schema({
 const User = mongoose.model('User', userDetailsSchema);
 
 app.post('/register', async (req,res) => {
+    console.log('Request Received')
     const userData = req.body
     const user = new User(userData)
     try {
