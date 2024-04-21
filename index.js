@@ -14,7 +14,6 @@ db.once('open', () => {
 })
 
 app.use(express.json);
-app.use(express.urlencoded({extended: true}));
 
 const userDetailsSchema = new mongoose.Schema({
     Name: {type: String, required: true},
